@@ -845,6 +845,20 @@ body.no-scroll {
     &:hover {
       background-color: #fff;
       border: 1px solid $brand-color;
+
+      p{
+        color: $brand-color;
+      }
+    }
+
+    &:hover img{
+      border-radius: 155px 155px 200px 200px;
+      height: 410px;
+
+      @media (max-width: 1170px) {
+        height: auto;
+      }
+      
     }
 
     &:hover .category-card__btn {

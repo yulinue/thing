@@ -829,6 +829,18 @@ body.no-scroll {
   background-color: #fff;
   border: 1px solid #4B6A5A;
 }
+.categories__container .category-card:hover p {
+  color: #4B6A5A;
+}
+.categories__container .category-card:hover img {
+  border-radius: 155px 155px 200px 200px;
+  height: 410px;
+}
+@media (max-width: 1170px) {
+  .categories__container .category-card:hover img {
+    height: auto;
+  }
+}
 .categories__container .category-card:hover .category-card__btn {
   background-color: #4B6A5A;
 }

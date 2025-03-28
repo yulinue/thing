@@ -2965,6 +2965,11 @@ footer .everytech a {
   gap: 40px;
   max-width: 700px;
 }
+@media (max-width: 600px) {
+  .order-form {
+    gap: 20px;
+  }
+}
 
 .section {
   border: none;

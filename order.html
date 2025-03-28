@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THING</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Onest:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7-beta.18/dist/inputmask.min.js"></script>
+    <script src="js/modal.js" defer></script>
+
+</head>
+<body>
+    <div class="burger-container">
+        <div class="burger-top">
+            <button class="burger-menu__btn" id="closeBurger">
+                <svg width="18" height="18" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.16992 26.1699L26.1699 2.16992" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M26.1699 26.1699L2.16992 2.16992" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+            </button>
+    
+            <div class="header__search-container">
+                <input type="text" name="search" id="search" class="header__search" placeholder="Органайзер для кухни">
+            </div>
+    
+            <div class="header__profile-actions">
+                <a href="catalog.html" class="header__catalog-btn">
+                    <svg width="24" height="22.86" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 7.23828H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M3 12H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M3 16.7617H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                      </svg>
+                    <p>Каталог</p>
+                </a> 
+                <a href="cart.html" class="profile-actions__btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.40002 6.5H15.6C19 6.5 19.34 8.09 19.57 10.03L20.47 17.53C20.76 19.99 20 22 16.5 22H7.51003C4.00003 22 3.24002 19.99 3.54002 17.53L4.44003 10.03C4.66003 8.09 5.00002 6.5 8.40002 6.5Z" stroke="#4B6A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M8 8V4.5C8 3 9 2 10.5 2H13.5C15 2 16 3 16 4.5V8" stroke="#4B6A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.41 17.0303H8" stroke="#4B6A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                </a>
+                <a href="#" class="profile-actions__btn" id="profileBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#4B6A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.5901 22C20.5901 18.13 16.7402 15 12.0002 15C7.26015 15 3.41016 18.13 3.41016 22" stroke="#4B6A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                </a>
+                   
+            </div>
+        </div>
+        <a href="index.html" class="logoHref">
+            <img src="images/Subtitle.svg" alt="">
+        </a>
+    </div>
+    <div class="modal-overlay">
+        <form action="" class="modal-form">
+
+            <button class="modal-form__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M9.16992 14.8299L14.8299 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.8299 14.8299L9.16992 9.16992" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+            </button>
+
+            <h2>Привет!</h2>
+
+            <div class="input-group">
+                <div class="input-container">
+                    <label for="login">Логин</label>
+                    <input type="text" name="login" placeholder="Ваш логин">
+                </div>
+
+                <div class="input-container">
+                    <label for="password">Пароль</label>
+                    <input type="password" name="password" placeholder="*********************">
+                </div>
+            </div>
+
+            <div class="modal-form__btns">
+                <button type="submit" class="modal-form__btn filledBtn">Войти</button>
+                <a href="#" class="modal-form__small-link">забыли логин или пароль?</a>
+                <hr class="modal-form__line">
+                <a href="#" class="modal-form__small-link">нет аккаунта?</a>
+                <a class="modal-form__btn emptyBtn">Зарегистрироваться</a>
+            </div>
+        </form>
+    </div>
+
+    <header class="header">
+        <div class="header__content container">
+            <div class="header__nav">
+                <a href="index.html">
+                    <svg width="153" height="40" viewBox="0 0 153 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                        <path d="M0 7.31939V0.53232H32.0361V7.31939H20.094V39.4677H11.9421V7.31939H0Z" fill="#4B6A5A" />
+                        <path d="M33.9598 39.4677V0.53232H42.2069V16.597H58.9487V0.53232H67.1768V39.4677H58.9487V23.384H42.2069V39.4677H33.9598Z" fill="#4B6A5A" />
+                        <path d="M78.8713 0.53232V39.4677H70.6242V0.53232H78.8713Z" fill="#4B6A5A" />
+                        <path d="M114.931 0.53232V39.4677H107.808L90.8372 14.962H90.5515V39.4677H82.3044V0.53232H89.542L106.379 25.019H106.722V0.53232H114.931Z" fill="#4B6A5A" />
+                        <path d="M144.258 13.1179C143.991 12.1926 143.616 11.3752 143.134 10.6654C142.651 9.94297 142.061 9.3346 141.363 8.84031C140.677 8.33333 139.89 7.94677 139.001 7.68061C138.125 7.41445 137.153 7.28137 136.087 7.28137C134.093 7.28137 132.341 7.77567 130.83 8.76426C129.332 9.75285 128.163 11.1914 127.325 13.0798C126.487 14.9556 126.068 17.2497 126.068 19.962C126.068 22.6743 126.481 24.981 127.306 26.8821C128.132 28.7833 129.3 30.2345 130.811 31.2357C132.322 32.2243 134.106 32.7186 136.163 32.7186C138.03 32.7186 139.623 32.3891 140.944 31.73C142.277 31.0583 143.293 30.1141 143.991 28.8973C144.702 27.6806 145.058 26.2421 145.058 24.5817L146.734 24.8289H136.677V18.6312H153V23.5361C153 26.9582 152.276 29.8986 150.829 32.3574C149.381 34.8035 147.388 36.692 144.848 38.0228C142.309 39.3409 139.401 40 136.125 40C132.468 40 129.255 39.1952 126.487 37.5855C123.719 35.9632 121.561 33.6629 120.012 30.6844C118.475 27.6933 117.707 24.1445 117.707 20.038C117.707 16.8821 118.164 14.0684 119.078 11.597C120.005 9.1128 121.3 7.00887 122.964 5.28517C124.627 3.56147 126.564 2.24968 128.773 1.34981C130.982 0.449937 133.376 0 135.953 0C138.163 0 140.22 0.323195 142.124 0.969583C144.029 1.6033 145.718 2.50317 147.191 3.6692C148.676 4.83523 149.889 6.22307 150.829 7.8327C151.768 9.42966 152.371 11.1914 152.638 13.1179H144.258Z" fill="#4B6A5A" />
+                      </svg>
+                </a>
+
+                <div class="header__nav-actions">
+                    <a href="catalog.html" class="header__catalog-btn">
+                            <svg width="24" height="22.86" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 7.23828H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M3 12H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M3 16.7617H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                              </svg>
+                            <p>Каталог</p>
+                            </a>
+
+                    <div class="header__search-container">
+                        <input type="text" name="search" id="search" class="header__search" placeholder="Органайзер для кухни">
+                    </div>
+                      
+                </div>
+            </div>
+
+            <div class="header__profile-actions">
+                <a href="cart.html" class="profile-actions__btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.40002 6.5H15.6C19 6.5 19.34 8.09 19.57 10.03L20.47 17.53C20.76 19.99 20 22 16.5 22H7.51003C4.00003 22 3.24002 19.99 3.54002 17.53L4.44003 10.03C4.66003 8.09 5.00002 6.5 8.40002 6.5Z" stroke="#4B6A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M8 8V4.5C8 3 9 2 10.5 2H13.5C15 2 16 3 16 4.5V8" stroke="#4B6A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.41 17.0303H8" stroke="#4B6A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                </a>
+                <a href="#" class="profile-actions__btn" id="profileBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#4B6A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M20.5901 22C20.5901 18.13 16.7402 15 12.0002 15C7.26015 15 3.41016 18.13 3.41016 22" stroke="#4B6A5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                </a>
+                <button class="burger-menu__btn" id="openBurger">
+                    <svg width="24" height="22.86" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 7.23828H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M3 12H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M3 16.7617H21" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page container">
+        <div class="breadcrumbs">
+            <a href="catalog.html" class="gray">Каталог товаров</a>
+            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="3" r="3" fill="#4B6A5A" />
+            </svg>
+            <h2 class="brand-color">Оформление заказа</h2>
+        </div>
+
+        <div class="order-container">
+            <form class="order-form">
+                <fieldset class="section">
+                    <legend>Личные данные</legend>
+                    <div class="input-group">
+                        <div class="input-container">
+                            <label>Фамилия</label>
+                            <input type="text" placeholder="Семенов">
+                        </div>
+                        <div class="input-container">
+                            <label>Имя</label>
+                            <input type="text" placeholder="Константин">
+                        </div>
+                        <div class="input-container">
+                            <label>Отчество</label>
+                            <input type="text" placeholder="Владимирович">
+                        </div>
+                        <div class="input-container">
+                            <label>Номер телефона</label>
+                            <input type="tel" name="phone" id="phone" placeholder="+7 (___) ___ - __ - __">
+                        </div>
+                        
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const phoneInput = document.getElementById('phone');
+                                const phoneMask = new Inputmask('+7 (999) 999-99-99'); // Маска для телефона
+                                phoneMask.mask(phoneInput);
+                            });
+                        </script>
+                        
+                        <div class="input-container">
+                            <label>Электронная почта </label>
+                            <input type="email" placeholder="example@mail.ru">
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <fieldset class="section">
+                    <legend>Доставка</legend>
+                    <div class="radio-group">
+                      <label>
+                        <input type="radio" name="delivery" id="self" checked>
+                        <span>Самовывоз</span>
+                      </label>
+                  
+                      <label>
+                        <input type="radio" name="delivery" id="courier">
+                        <span>Доставка курьером</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  
+                
+                <fieldset class="section">
+                    <legend>Оплата</legend>
+                    <div class="radio-group">
+                      <label>
+                        <input type="radio" name="payment" id="online" checked>
+                        <span>Онлайн оплата</span>
+                      </label>
+                  
+                      <label>
+                        <input type="radio" name="payment" id="cash">
+                        <span>Наличными</span>
+                      </label>
+                    </div>
+                </fieldset>
+                
+                <button type="submit" class="submit-btn">Оплатить заказ</button>
+            </form>
+
+            <div class="cart__total-container">
+                <h5>Итого товаров<br>на сумму:</h5>
+                <h3>2 400 ₽</h3>
+                <p>увы, сегодня без скидок :&#40</p>
+                <a href="order.html" class="cart__total-btn">Оплатить заказ</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="images/Subtitle.svg" alt="" class="footer__logo">
+
+        <div class="footer__text">
+            <p>© 2025 Официальный сайт THING. Все права защищены</p>
+
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Карта сайта</a>
+
+            <div class="everytech">
+                <p>Разработка и продвижение</p>
+
+                <a href="https://every-tech.ru/"><img src="images/everytech.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
